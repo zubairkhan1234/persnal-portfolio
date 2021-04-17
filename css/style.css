@@ -1,0 +1,281 @@
+@import url(./utility.css);
+
+:root{
+    --Primary : #11d3dd,
+    --dark : #161616,
+    --pure :#ffffff,
+    --ternary : #898989,
+    --light : #f2f2f2,
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background:  #161616;
+    clip-path: polygon(0 0, 100% 0 , 100% 100%, 70% 80%, 0 100% );
+    height: 90vh;
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a {
+    color:  white;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+}
+
+header nav .left a:hover{
+    color: #11d3dd;
+    transition: .3s;
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding {
+    margin-right:  3rem;
+}
+
+.hero img {
+    width: 400px;
+}
+
+.hero .right {
+    color: white;
+}
+
+.hero .right h6 {
+    font-size: 1.6rem;
+    color: #11d3dd;
+    margin-bottom: 0.8rem;
+}
+
+.hero .right h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 0.8;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: #11d3dd;
+}
+
+.hero .right p {
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.about h1 span{
+    color:#11d3dd ;
+}
+
+section.about h3
+{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+
+section.about p{
+    /* there will be add "lato" font family with bold regular lite */
+    /* font-family: lato sans-serif; */
+    color: #898989;
+    line-height: 1.9;
+}
+section.about .right .social_media_icon{
+
+    margin-top: 2rem;
+
+}
+section.about .right a {
+    width: 100px;
+    height: 100px;
+    background-color: #11d3dd;
+    padding: 0.5rem;
+    border-radius: 100%;
+    color:#161616;
+}
+section.about .right a:hover {
+    width: 100px;
+    height: 100px;
+    color: #11d3dd;
+    padding: 0.5rem;
+    border-radius: 100%;
+    background-color:#161616;
+    transition: .3s;
+}
+
+.section-heading{
+    color: #11d3dd;
+    text-align: center;
+    line-height: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-heading span{
+    color: #161616;
+}
+
+.section-heading + p {
+    color:#898989;
+    /* font family will be add lato  */
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+section.services {
+    background-color: #f2f2f2;
+}
+section.services .card-wrapper{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;  */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+section.services .card-wrapper .card{
+    background-color: white;
+    padding: 3rem 2rem ;
+    position: relative;
+    text-align: center;
+}
+section.services .card-wrapper .card:hover{
+    background-color: black;
+    color: white;
+    transition: .3s;
+}
+
+section.services .card-wrapper .card a{
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: #11d3dd;
+}
+
+section.services .card-wrapper .card h2{
+    margin-bottom: 1rem;
+}
+
+
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../images/image1.jpg);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    color: white;
+    clip-path: polygon(0 0, 100% 0 , 100% 100%, 70% 80%, 0 100% );
+    padding-bottom: 15rem;
+
+}
+
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.freelancer p{
+    margin-bottom: 1rem;
+}
+
+section.contact .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+
+section.contact .card-wrapper .card img{
+    margin-bottom: 2.5rem;
+}
+
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+    font-weight: 400;
+    color: #898989;
+    font-size: 1rem;    
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+section.contact input{
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #898989;
+    font-size: 0.9rem;
+}
+
+
+section.contact textarea{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid #898989;
+    font-size: 0.9rem;
+}
+section.contact textarea:focus, section.contact input:focus{
+    outline: none;
+}
+
+.btn-wrapper{
+    text-align: center;
+}
+
+footer{
+    background-color: #161616;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+footer img,footer .footer-socials{
+    margin-bottom: 2rem;
+
+}
+
+footer img,footer .footer-socials a {
+    padding: 0.5rem;
+    margin-right: 0.3rem;
+}
+
+.copy-right{
+    color: #898989;
+}
