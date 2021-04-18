@@ -13,6 +13,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 header{
     background:  #161616;
     clip-path: polygon(0 0, 100% 0 , 100% 100%, 70% 80%, 0 100% );
@@ -278,4 +279,88 @@ footer img,footer .footer-socials a {
 
 .copy-right{
     color: #898989;
+}
+
+
+
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamburger{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 90;
+    background: none;
+    border: none;
+    color: #11d3dd;
+    font-size: 40px;
+    outline: none;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 100;
+    background: none;
+    border: none;
+    color: #161616;
+    font-size: 40px;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobile-nav{
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color:#f2f2f2;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+.open{
+    transform: translateX(0);
+}
+.mobile-nav ul {
+    text-align: center;
+}
+
+.mobile-nav ul a li {
+    margin-bottom:0.2rem;
+    margin-top:0.2rem;
+    padding:0.2rem;
+    list-style: none;
+}
+
+.mobile-nav ul  a{
+    text-decoration: none;
+    color: #161616;
+    font-size: 2rem;
+}
+
+.mobile-nav ul li:hover, .mobile-nav ul li a:hover{
+    background-color: #161616;
+    color: white;
+    
+}
+@media (max-width : 1024px){
+    header #main-nav{
+        display: none;
+    }
+}
+@media (min-width : 1024px){
+
+    #icon{
+        display: none;
+    }
 }
