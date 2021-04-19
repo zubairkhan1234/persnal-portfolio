@@ -26,6 +26,8 @@ header{
     margin: 0 auto;
 }
 
+
+
 header nav .left a {
     color:  white;
     text-decoration: none;
@@ -118,7 +120,7 @@ section.about .right a {
     border-radius: 100%;
     color:#161616;
 }
-section.about .right a:hover {
+section.about .right a:hover{
     width: 100px;
     height: 100px;
     color: #11d3dd;
@@ -177,6 +179,21 @@ section.services .card-wrapper .card a{
     width: 50px;
     height: 50px;
     background-color: #11d3dd;
+    color: black;
+    font-size: 25px;
+    padding-top: 3%;
+}
+section.services .card-wrapper .card a:hover{
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(250, 98, 98);
+    color: #11d3dd;
+    font-size: 25px;
+    padding-top: 3%;
 }
 
 section.services .card-wrapper .card h2{
@@ -357,10 +374,92 @@ footer img,footer .footer-socials a {
     header #main-nav{
         display: none;
     }
+    .hero img{
+        width: 260px;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    .justify-between{
+        padding: 25% 0;
+    }
+    header{
+        height: auto;
+        clip-path: polygon(0 0, 100% 0 , 100% 100%, 70% 90%, 0 100% );
+    }
+    section.services .card-wrapper{
+        display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+}
 }
 @media (min-width : 1024px){
-
+    
     #icon{
         display: none;
+        
+    }
+}
+
+@media (min-width : 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (max-width : 576px) {
+    
+    .hero{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero .right{
+        padding-top: 5%;
+    }
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1, 1fr) ;
+        
+    }
+    .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    section.freelancer{
+        clip-path: polygon(0 0, 100% 0 , 100% 100%, 70% 90%, 0 100% );
+    }
+    .hamburger, .close{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .about-me-image{
+        padding-bottom: 10%;
+    }
+
+    section.services .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (min-width : 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width : 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width : 1200px) {
+    .container {
+        max-width: 1152px;
     }
 }
